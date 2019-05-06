@@ -1,0 +1,16 @@
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.jumbotron {
+    background-image: url(../Images/deal-3.jpg);
+    background-size: cover;
+    color: white;
+    margin-top: 10px;
+    height: 500px;
+    font-family: Georgia, 'Times New Roman', Times, serif
+    
+}
+
+#deal-head {
+    padding-top: 250px;
+}
