@@ -1,5 +1,6 @@
 body {
     font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: whitesmoke;
 }
 .jumbotron {
     background-image: url(../Images/deal-3.jpg);
@@ -13,4 +14,54 @@ body {
 
 #deal-head {
     padding-top: 250px;
+}
+
+.mkimg {
+    height: 450px;
+}
+
+.delcar {
+    height: 400px;
+    max-width: 400px;
+    
+}
+
+.carbut {
+    margin-top: -150px;
+}
+
+.footie {
+    margin-top: 150px;
+    
+}
+
+.foobut {
+    background-color: whitesmoke;
+    border: none;
+}
+
+#pord {
+    margin-left: 200px;
+}
+
+.Builder-head {
+    margin-top: 50px;
+    margin-left: 160px;
+}
+
+.top-list-l {
+    border: none;
+    background-color: whitesmoke;
+}
+
+.toppings {
+    margin-top: 0px;
+
+}
+
+.top-check-1 {
+    border: none;
+    background-color: whitesmoke;
+    margin-top: -15px;
+    margin-left: 100px;
 }

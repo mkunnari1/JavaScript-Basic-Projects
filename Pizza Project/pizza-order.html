@@ -1,0 +1,254 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!--Custom CSS-->
+    <link rel="stylesheet" href="./CSS/stylesheet-1.css">
+
+    <title>Jimmy Pesto's | Pizzeria</title>
+  </head>
+  <header>
+        <!--Nav-->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+              <a class="navbar-brand" href="#">Jimmy Pesto's Pizzeria</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+              <ul class="navbar-nav">
+              <li class="nav-item active">
+                  <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item active">
+                  <a class="nav-link" href="#">Deals</a>
+              </li>
+              <li class="nav-item active">
+                  <a class="nav-link" href="#">Order Now!</a>
+              </li>
+              <li class="nav-item dropdown active">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Pizza Rewards
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <a class="dropdown-item" href="#">Member Login</a>
+                  <a class="dropdown-item" href="#">Sign Up</a>
+                  </div>
+              </li>
+              </ul>
+          </div>
+      </nav>
+        <!--/Nav-->
+    </header>
+  <body>
+    <h3>Welcome to the Jimmy Pesto's Pizza Builder</h3>
+    <p id="pord">Let's get started!</p>
+<!--Size-->
+    <h5 class="Builder-head">First, Choose your size</h5>
+
+    <div class="btn-group btn-group-toggle" data-toggle="buttons">
+            <label class="btn btn-danger active">
+              <input type="radio" name="options" id="option1" autocomplete="off" checked> Personal $6.00
+            </label>
+            <label class="btn btn-danger">
+              <input type="radio" name="options" id="option2" autocomplete="off"> Medium $10.00
+            </label>
+            <label class="btn btn-danger">
+              <input type="radio" name="options" id="option3" autocomplete="off"> Large $14.00
+            </label>
+            <label class="btn btn-danger">
+                    <input type="radio" name="options" id="option3" autocomplete="off"> Extra Large $16.00
+                  </label>
+          </div>
+<!--/Size-->
+<!--Crust Type-->
+
+    <h5 class="Builder-head">Select a Crust type</h5>
+
+    <div class="btn-group btn-group-toggle" data-toggle="buttons">
+            <label class="btn btn-danger active">
+              <input type="radio" name="options" id="option1" autocomplete="off" checked> Plain Crust
+            </label>
+            <label class="btn btn-danger">
+              <input type="radio" name="options" id="option2" autocomplete="off"> Garlic Butter
+            </label>
+            <label class="btn btn-danger">
+              <input type="radio" name="options" id="option3" autocomplete="off"> Cheese Stuffed (+$3.00)
+            </label>
+            <label class="btn btn-danger">
+                    <input type="radio" name="options" id="option3" autocomplete="off"> Spicy Crust
+                  </label>
+            <label class="btn btn-danger">
+                <input type="radio" name="options" id="option3" autocomplete="off"> House Special Crust
+                </label>
+          </div>
+<!--/Crust Type-->
+
+<!--Cheese Selection-->
+        <h5 class="Builder-head">Choose your Cheese</h5>
+
+        <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                <label class="btn btn-danger active">
+                <input type="radio" name="options" id="option1" autocomplete="off" checked> Regular
+                </label>
+                <label class="btn btn-danger">
+                <input type="radio" name="options" id="option2" autocomplete="off"> No Cheese
+                </label>
+                <label class="btn btn-danger">
+                <input type="radio" name="options" id="option3" autocomplete="off"> Extra Cheese (+$3.00)
+                </label>
+                
+            </div>
+<!--/Cheese Selection-->
+
+<!--Sauce Selection-->
+            <h5 class="Builder-head">Sauce Selection</h5>
+
+            <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                    <label class="btn btn-danger active">
+                    <input type="radio" name="options" id="option1" autocomplete="off" checked> Marinara sauce
+                    </label>
+                    <label class="btn btn-danger">
+                    <input type="radio" name="options" id="option2" autocomplete="off"> White sauce
+                    </label>
+                    <label class="btn btn-danger">
+                    <input type="radio" name="options" id="option3" autocomplete="off"> Barbeque sauce
+                    </label>
+                    <label class="btn btn-danger">
+                            <input type="radio" name="options" id="option3" autocomplete="off"> No sauce
+                            </label>
+                    
+                </div>
+<!--/Sauce Selection-->
+
+<!--Toppings-->
+    <!--Meat Selections-->
+    <h5 class="Builder-head">Choose your toppings</h5>
+    <p class="Builder-head">Meats, the first one is included each additional meat choice is +$1.00</p>
+            <div class="input-group mb-3 top-list-1">
+                    <div class="input-group-prepend">
+                      <div class="input-group-text top-check-1">
+                        <input type="checkbox" aria-label="Checkbox for following text input">
+                      </div>
+                    </div>
+                    <p class="toppings">Pepperoni</p>
+                  </div>
+                  <div class="input-group mb-3 top-list-1">
+                        <div class="input-group-prepend">
+                          <div class="input-group-text top-check-1">
+                            <input type="checkbox" aria-label="Checkbox for following text input">
+                          </div>
+                        </div>
+                        <p class="toppings">Sausage</p>
+                      </div>
+                      <div class="input-group mb-3 top-list-1">
+                            <div class="input-group-prepend">
+                              <div class="input-group-text top-check-1">
+                                <input type="checkbox" aria-label="Checkbox for following text input">
+                              </div>
+                            </div>
+                            <p class="toppings">Canadian Bacon</p>
+                          </div>
+                          <div class="input-group mb-3 top-list-1">
+                                <div class="input-group-prepend">
+                                  <div class="input-group-text top-check-1">
+                                    <input type="checkbox" aria-label="Checkbox for following text input">
+                                  </div>
+                                </div>
+                                <p class="toppings">Ground Beef</p>
+                              </div>
+                              <div class="input-group mb-3 top-list-1">
+                                    <div class="input-group-prepend">
+                                      <div class="input-group-text top-check-1">
+                                        <input type="checkbox" aria-label="Checkbox for following text input">
+                                      </div>
+                                    </div>
+                                    <p class="toppings">Anchovy</p>
+                                  </div>
+                                  <div class="input-group mb-3 top-list-1">
+                                        <div class="input-group-prepend">
+                                          <div class="input-group-text top-check-1">
+                                            <input type="checkbox" aria-label="Checkbox for following text input">
+                                          </div>
+                                        </div>
+                                        <p class="toppings">Chicken</p>
+                                      </div>
+                                      <p class="Builder-head">Veggies, first is complimentary each additional is +$1.00</p>
+                                      <div class="input-group mb-3 top-list-1">
+                                            <div class="input-group-prepend">
+                                              <div class="input-group-text top-check-1">
+                                                <input type="checkbox" aria-label="Checkbox for following text input">
+                                              </div>
+                                            </div>
+                                            <p class="toppings">Tomatos</p>
+                                          </div>
+                                          <div class="input-group mb-3 top-list-1">
+                                                <div class="input-group-prepend">
+                                                  <div class="input-group-text top-check-1">
+                                                    <input type="checkbox" aria-label="Checkbox for following text input">
+                                                  </div>
+                                                </div>
+                                                <p class="toppings">Onions</p>
+                                              </div>
+                                              <div class="input-group mb-3 top-list-1">
+                                                    <div class="input-group-prepend">
+                                                      <div class="input-group-text top-check-1">
+                                                        <input type="checkbox" aria-label="Checkbox for following text input">
+                                                      </div>
+                                                    </div>
+                                                    <p class="toppings">Olives</p>
+                                                  </div>
+                                                  <div class="input-group mb-3 top-list-1">
+                                                        <div class="input-group-prepend">
+                                                          <div class="input-group-text top-check-1">
+                                                            <input type="checkbox" aria-label="Checkbox for following text input">
+                                                          </div>
+                                                        </div>
+                                                        <p class="toppings">Green Peppers</p>
+                                                      </div>
+                                                      <div class="input-group mb-3 top-list-1">
+                                                            <div class="input-group-prepend">
+                                                              <div class="input-group-text top-check-1">
+                                                                <input type="checkbox" aria-label="Checkbox for following text input">
+                                                              </div>
+                                                            </div>
+                                                            <p class="toppings">Mushrooms</p>
+                                                          </div>
+                                                          <div class="input-group mb-3 top-list-1">
+                                                                <div class="input-group-prepend">
+                                                                  <div class="input-group-text top-check-1">
+                                                                    <input type="checkbox" aria-label="Checkbox for following text input">
+                                                                  </div>
+                                                                </div>
+                                                                <p class="toppings">Pineapple</p>
+                                                              </div>
+                                                              <div class="input-group mb-3 top-list-1">
+                                                                    <div class="input-group-prepend">
+                                                                      <div class="input-group-text top-check-1">
+                                                                        <input type="checkbox" aria-label="Checkbox for following text input">
+                                                                      </div>
+                                                                    </div>
+                                                                    <p class="toppings">Spinach</p>
+                                                                  </div>
+                                                                  <div class="input-group mb-3 top-list-1">
+                                                                        <div class="input-group-prepend">
+                                                                          <div class="input-group-text top-check-1">
+                                                                            <input type="checkbox" aria-label="Checkbox for following text input">
+                                                                          </div>
+                                                                        </div>
+                                                                        <p class="toppings">Jalepeno</p>
+                                                                      </div>
+
+    
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>

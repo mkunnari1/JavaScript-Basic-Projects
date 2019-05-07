@@ -7,11 +7,11 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="./CSS/stylesheet-1.css">
-    <title>Jimmy Pesto's | Pizzeria</title>
-    
- 
 
+    <!--custom CSS-->
+    <link rel="stylesheet" href="./CSS/stylesheet-1.css">
+
+    <title>Jimmy Pesto's | Pizzeria</title>
   </head>
   <header>
       <!--Nav-->
@@ -45,49 +45,37 @@
     </nav>
       <!--/Nav-->
   </header>
-
   <body>
-    <!--Current Deals-->
-    <div class="jumbotron">
-           
-            <h1 id="deal-head">$9.99 Large Five Topping Pizza</h1>
-            <a class="btn btn-danger btn-lg" href="#" role="button">Order Now</a>
-          </div>
-    <!--/Current Deals-->
 
-    <!--Order Now-->
-    <div class="card-deck">
-            <div class="card">
-              <img src="./Images/card-deck-1.jpg" class="card-img-top mkimg" alt="...">
-              <div class="card-body">
-                <h3 class="card-title">Pizza</h3>
-                <p class="card-text">Create your own custom pizza with all of your favorite toppings.</p>
-                <a href="./pizza-builder.html" class="btn btn-danger">Build your pizza</a>
-              </div>
-            </div>
-            <div class="card">
-              <img src="./Images/card-deck-2.jpg" class="card-img-top mkimg" alt="...">
-              <div class="card-body">
-                <h3 class="card-title">Calzone</h3>
-                <p class="card-text">Want a pizza you can take on the go?</p>
-                <a href="./404.html" class="btn btn-danger">Choose your fillings</a>
-              </div>
-            </div>
-            <div class="card">
-              <img src="./Images/card-deck-3.jpg" class="card-img-top mkimg" alt="...">
-              <div class="card-body">
-                <h3 class="card-title">Wings & Things</h3>
-                <p class="card-text">Not in the mood for pizza? check out our other menu items here</p>
-                <a href="./404.html" class="btn btn-danger">Menu Items</a>
-              </div>
-            </div>
-          </div>
+    <!--Delivery or Carryout-->
+    <div class="card-deck ">
+        <div class="card delcar">
+            <img src="./Images/delivery.jpg" class="card-img-top delcar" alt="...">
+            <div class="card-body">
           
-    <!--/Order Now-->
-
-    <!--Pizza Rewards Program-->
-    <!--/Pizza Rewards Program-->
-
+            <a href="./pizza-order.html" class="btn btn-danger">Delivery</a>
+            </div>
+        </div>
+        <div class="card delcar">
+            <img src="./Images/carryout.jpg" class="card-img-top delcar" alt="...">
+            <div class="card-body">
+           
+            <a href="./pizza-order.html" class="btn btn-danger carbut">Carryout</a>
+            </div>
+        </div>
+    </div>
+    <!--/Delivery or Carryout-->
+    
+    <!--Footer-->
+    <ul class="list-group list-group-horizontal footie">
+            <li class="list-group-item foobut"><a href="./404.html" class="btn btn-danger">Menu</a></li>
+            <li class="list-group-item foobut"><a href="./404.html" class="btn btn-danger">About us</a></li>
+            <li class="list-group-item foobut"><a href="./404.html" class="btn btn-danger">Customer Service</a></li>
+            <li class="list-group-item foobut"><a href="./404.html" class="btn btn-danger">our Promise</a></li>
+            <li class="list-group-item foobut"><a href="./404.html" class="btn btn-danger">My Account</a></li>
+           
+          </ul>
+    <!--/Footer-->
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -95,9 +83,4 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
   </body>
-
-  <footer>
-      <!--Contact us-->
-      <!--/Contact us-->
-  </footer>
 </html>
