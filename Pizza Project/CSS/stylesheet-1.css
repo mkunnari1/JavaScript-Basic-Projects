@@ -65,3 +65,17 @@ body {
     margin-top: -15px;
     margin-left: 100px;
 }
+
+.builder-p {
+    max-width: 350px;
+    border: 1px solid #d9534f;
+    border-radius: 5px;
+    background-color: #d9534f;
+    color: white;
+}
+
+#order-butn {
+    margin-left: 160px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}

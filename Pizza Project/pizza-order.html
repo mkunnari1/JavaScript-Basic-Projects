@@ -52,16 +52,16 @@
     <h5 class="Builder-head">First, Choose your size</h5>
 
     <div class="btn-group btn-group-toggle" data-toggle="buttons">
-            <label class="btn btn-danger active">
+            <label class="btn btn-danger active size">
               <input type="radio" name="options" id="option1" autocomplete="off" checked> Personal $6.00
             </label>
-            <label class="btn btn-danger">
+            <label class="btn btn-danger size">
               <input type="radio" name="options" id="option2" autocomplete="off"> Medium $10.00
             </label>
-            <label class="btn btn-danger">
+            <label class="btn btn-danger size">
               <input type="radio" name="options" id="option3" autocomplete="off"> Large $14.00
             </label>
-            <label class="btn btn-danger">
+            <label class="btn btn-danger size">
                     <input type="radio" name="options" id="option3" autocomplete="off"> Extra Large $16.00
                   </label>
           </div>
@@ -129,7 +129,7 @@
 <!--Toppings-->
     <!--Meat Selections-->
     <h5 class="Builder-head">Choose your toppings</h5>
-    <p class="Builder-head">Meats, the first one is included each additional meat choice is +$1.00</p>
+    <p class="Builder-head builder-p">Meats, the first one is complimentary each additional meat choice is +$1.00</p>
             <div class="input-group mb-3 top-list-1">
                     <div class="input-group-prepend">
                       <div class="input-group-text top-check-1">
@@ -178,14 +178,16 @@
                                         </div>
                                         <p class="toppings">Chicken</p>
                                       </div>
-                                      <p class="Builder-head">Veggies, first is complimentary each additional is +$1.00</p>
+    <!--/Meat selection-->
+    <!--Veggie selection-->
+                                      <p class="Builder-head builder-p">Veggies, first is complimentary each additional veggie is +$1.00</p>
                                       <div class="input-group mb-3 top-list-1">
                                             <div class="input-group-prepend">
                                               <div class="input-group-text top-check-1">
                                                 <input type="checkbox" aria-label="Checkbox for following text input">
                                               </div>
                                             </div>
-                                            <p class="toppings">Tomatos</p>
+                                            <p class="toppings">Tomatoes</p>
                                           </div>
                                           <div class="input-group mb-3 top-list-1">
                                                 <div class="input-group-prepend">
@@ -243,9 +245,76 @@
                                                                         </div>
                                                                         <p class="toppings">Jalepeno</p>
                                                                       </div>
+        <!--/Veggie selection-->
+
+        <!--Place order-->
+        <!--click the button to bring up the window with your receipt then click a confirm button on the bottom of that page which brings up a seocnd window that confirms your order-->
+        <div>
+            <button type="button" class="btn btn-danger btn-lg " data-toggle="modal" data-target="#orderModal" id="order-butn">Place Order</button>
+        </div>
+        <!--/Place order-->
+
+        <!--order modal-->
+        <div class="modal fade" id="orderModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalCenterTitle">Order Summary</h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                      <p id="repJava"></p>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+                      <button type="button" class="btn btn-danger">Order</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+        <!--/order modal-->
 
     
     <!-- Optional JavaScript -->
+    <script>
+        document.getElementById("repJava").innerHTML=buildReceipt();
+
+        function buildReceipt() {
+            var text1 = "<h3>You Ordered</h3>"
+            var runningTotal = 0;
+            var sizeTotal = 0;
+            var sizeArray = document.getElementsByClassName("size")
+        }
+
+        for(var i=0; i<sizeArray.length;i++) {
+            if(sizeArray[i].checked) {
+                var selectedSize = sizeArray[i].value;
+                text1 = text1+selectedSize+"<br>";
+            }
+        }
+
+        if(selectedSize === "Personal") {
+            sizeTotal = 6;
+        }
+        else if(selectedSize === "Medium") {
+            sizeTotal = 10;
+        }
+        else if(selectedSize === "Large") {
+            sizeTotal = 14;
+        }
+        else if(selectedSize === "Extra Large") {
+            sizeTotal = 16;
+        }
+
+        runningTotal = sizeTotal;
+        console.log(selectedSize+" = $"+sizeTotal+".00");
+        console.log("size text1: "+text1);
+        console.log("subtotal: $"+runningTotal+".00");
+        getMeat(runningTotal,text1);
+        
+    </script>
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
