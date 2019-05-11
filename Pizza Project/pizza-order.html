@@ -52,17 +52,17 @@
     <h5 class="Builder-head">First, Choose your size</h5>
 
     <div class="btn-group btn-group-toggle" data-toggle="buttons">
-            <label class="btn btn-danger active size">
-              <input type="radio" name="options" id="option1" autocomplete="off" checked> Personal $6.00
+            <label class="btn btn-danger active">
+              <input type="radio" name="options" class="Size" id="option1" autocomplete="off" checked> Personal $6.00
             </label>
-            <label class="btn btn-danger size">
-              <input type="radio" name="options" id="option2" autocomplete="off"> Medium $10.00
+            <label class="btn btn-danger">
+              <input type="radio" name="options" class="Size" id="option2" autocomplete="off"> Medium $10.00
             </label>
-            <label class="btn btn-danger size">
-              <input type="radio" name="options" id="option3" autocomplete="off"> Large $14.00
+            <label class="btn btn-danger">
+              <input type="radio" name="options" class="Size" id="option3" autocomplete="off"> Large $14.00
             </label>
-            <label class="btn btn-danger size">
-                    <input type="radio" name="options" id="option3" autocomplete="off"> Extra Large $16.00
+            <label class="btn btn-danger">
+                    <input type="radio" name="options" class="Size" id="option3" autocomplete="off"> Extra Large $16.00
                   </label>
           </div>
 <!--/Size-->
@@ -72,19 +72,19 @@
 
     <div class="btn-group btn-group-toggle" data-toggle="buttons">
             <label class="btn btn-danger active">
-              <input type="radio" name="options" id="option1" autocomplete="off" checked> Plain Crust
+              <input type="radio" name="options" id="option1" autocomplete="off" class="crust" checked> Plain Crust
             </label>
-            <label class="btn btn-danger">
-              <input type="radio" name="options" id="option2" autocomplete="off"> Garlic Butter
+            <label class="btn btn-danger ">
+              <input type="radio" name="options" id="option2" autocomplete="off" class="crust"> Garlic Butter
             </label>
-            <label class="btn btn-danger">
-              <input type="radio" name="options" id="option3" autocomplete="off"> Cheese Stuffed (+$3.00)
+            <label class="btn btn-danger ">
+              <input type="radio" name="options" id="option3" autocomplete="off" class="crust"> Cheese Stuffed (+$3.00)
             </label>
-            <label class="btn btn-danger">
-                    <input type="radio" name="options" id="option3" autocomplete="off"> Spicy Crust
+            <label class="btn btn-danger ">
+                    <input type="radio" name="options" id="option3" autocomplete="off" class="crust"> Spicy Crust
                   </label>
-            <label class="btn btn-danger">
-                <input type="radio" name="options" id="option3" autocomplete="off"> House Special Crust
+            <label class="btn btn-danger ">
+                <input type="radio" name="options" id="option3" autocomplete="off" class="crust"> House Special Crust
                 </label>
           </div>
 <!--/Crust Type-->
@@ -92,15 +92,15 @@
 <!--Cheese Selection-->
         <h5 class="Builder-head">Choose your Cheese</h5>
 
-        <div class="btn-group btn-group-toggle" data-toggle="buttons">
+        <div class="btn-group btn-group-toggle " data-toggle="buttons">
                 <label class="btn btn-danger active">
-                <input type="radio" name="options" id="option1" autocomplete="off" checked> Regular
+                <input type="radio" name="options" id="option1" autocomplete="off" class="cheese" checked> Regular
                 </label>
                 <label class="btn btn-danger">
-                <input type="radio" name="options" id="option2" autocomplete="off"> No Cheese
+                <input type="radio" name="options" id="option2" autocomplete="off" class="cheese"> No Cheese
                 </label>
                 <label class="btn btn-danger">
-                <input type="radio" name="options" id="option3" autocomplete="off"> Extra Cheese (+$3.00)
+                <input type="radio" name="options" id="option3" autocomplete="off" class="cheese"> Extra Cheese (+$3.00)
                 </label>
                 
             </div>
@@ -111,16 +111,16 @@
 
             <div class="btn-group btn-group-toggle" data-toggle="buttons">
                     <label class="btn btn-danger active">
-                    <input type="radio" name="options" id="option1" autocomplete="off" checked> Marinara sauce
+                    <input type="radio" name="options" id="option1" autocomplete="off" class="sauce" checked> Marinara sauce
                     </label>
                     <label class="btn btn-danger">
-                    <input type="radio" name="options" id="option2" autocomplete="off"> White sauce
+                    <input type="radio" name="options" id="option2" autocomplete="off" class="sauce"> White sauce
                     </label>
                     <label class="btn btn-danger">
-                    <input type="radio" name="options" id="option3" autocomplete="off"> Barbeque sauce
+                    <input type="radio" name="options" id="option3" autocomplete="off" class="sauce"> Barbeque sauce
                     </label>
                     <label class="btn btn-danger">
-                            <input type="radio" name="options" id="option3" autocomplete="off"> No sauce
+                            <input type="radio" name="options" id="option3" autocomplete="off" class="sauce"> No sauce
                             </label>
                     
                 </div>
@@ -133,139 +133,144 @@
             <div class="input-group mb-3 top-list-1">
                     <div class="input-group-prepend">
                       <div class="input-group-text top-check-1">
-                        <input type="checkbox" aria-label="Checkbox for following text input">
+                        <input type="checkbox"  aria-label="Checkbox for following text input" class="meats">Pepperoni
                       </div>
                     </div>
-                    <p class="toppings">Pepperoni</p>
+                   
                   </div>
                   <div class="input-group mb-3 top-list-1">
                         <div class="input-group-prepend">
                           <div class="input-group-text top-check-1">
-                            <input type="checkbox" aria-label="Checkbox for following text input">
+                            <input type="checkbox" aria-label="Checkbox for following text input" class="meats">Sausage
                           </div>
                         </div>
-                        <p class="toppings">Sausage</p>
+                        
                       </div>
                       <div class="input-group mb-3 top-list-1">
                             <div class="input-group-prepend">
                               <div class="input-group-text top-check-1">
-                                <input type="checkbox" aria-label="Checkbox for following text input">
+                                <input type="checkbox" aria-label="Checkbox for following text input" class="meats">Canadian Bacon
                               </div>
                             </div>
-                            <p class="toppings">Canadian Bacon</p>
+                            
                           </div>
                           <div class="input-group mb-3 top-list-1">
                                 <div class="input-group-prepend">
                                   <div class="input-group-text top-check-1">
-                                    <input type="checkbox" aria-label="Checkbox for following text input">
+                                    <input type="checkbox" aria-label="Checkbox for following text input" class="meats">Ground Beef
                                   </div>
                                 </div>
-                                <p class="toppings">Ground Beef</p>
+                                
                               </div>
                               <div class="input-group mb-3 top-list-1">
                                     <div class="input-group-prepend">
                                       <div class="input-group-text top-check-1">
-                                        <input type="checkbox" aria-label="Checkbox for following text input">
+                                        <input type="checkbox" aria-label="Checkbox for following text input" class="meats">Anchovy
                                       </div>
                                     </div>
-                                    <p class="toppings">Anchovy</p>
+                                    
                                   </div>
                                   <div class="input-group mb-3 top-list-1">
                                         <div class="input-group-prepend">
                                           <div class="input-group-text top-check-1">
-                                            <input type="checkbox" aria-label="Checkbox for following text input">
+                                            <input type="checkbox" aria-label="Checkbox for following text input" class="meats">Chicken
                                           </div>
                                         </div>
-                                        <p class="toppings">Chicken</p>
+                                        
                                       </div>
     <!--/Meat selection-->
     <!--Veggie selection-->
                                       <p class="Builder-head builder-p">Veggies, first is complimentary each additional veggie is +$1.00</p>
-                                      <div class="input-group mb-3 top-list-1">
+                                      <div class="input-group mb-3 top-list-1 veggies">
                                             <div class="input-group-prepend">
                                               <div class="input-group-text top-check-1">
-                                                <input type="checkbox" aria-label="Checkbox for following text input">
+                                                <input type="checkbox" aria-label="Checkbox for following text input" class="veggie">Tomatoes
                                               </div>
                                             </div>
-                                            <p class="toppings">Tomatoes</p>
+                                          
                                           </div>
                                           <div class="input-group mb-3 top-list-1">
                                                 <div class="input-group-prepend">
                                                   <div class="input-group-text top-check-1">
-                                                    <input type="checkbox" aria-label="Checkbox for following text input">
+                                                    <input type="checkbox" aria-label="Checkbox for following text input" class="veggie">Onions
                                                   </div>
                                                 </div>
-                                                <p class="toppings">Onions</p>
+                                               
                                               </div>
                                               <div class="input-group mb-3 top-list-1">
                                                     <div class="input-group-prepend">
                                                       <div class="input-group-text top-check-1">
-                                                        <input type="checkbox" aria-label="Checkbox for following text input">
+                                                        <input type="checkbox" aria-label="Checkbox for following text input" class="veggie">Olives
                                                       </div>
                                                     </div>
-                                                    <p class="toppings">Olives</p>
+                                                  
                                                   </div>
                                                   <div class="input-group mb-3 top-list-1">
                                                         <div class="input-group-prepend">
                                                           <div class="input-group-text top-check-1">
-                                                            <input type="checkbox" aria-label="Checkbox for following text input">
+                                                            <input type="checkbox" aria-label="Checkbox for following text input" class="veggie">Green Peppers
                                                           </div>
                                                         </div>
-                                                        <p class="toppings">Green Peppers</p>
+                                                        
                                                       </div>
                                                       <div class="input-group mb-3 top-list-1">
                                                             <div class="input-group-prepend">
                                                               <div class="input-group-text top-check-1">
-                                                                <input type="checkbox" aria-label="Checkbox for following text input">
+                                                                <input type="checkbox" aria-label="Checkbox for following text input" class="veggie">Mushrooms
                                                               </div>
                                                             </div>
-                                                            <p class="toppings">Mushrooms</p>
+                                                           
                                                           </div>
                                                           <div class="input-group mb-3 top-list-1">
                                                                 <div class="input-group-prepend">
                                                                   <div class="input-group-text top-check-1">
-                                                                    <input type="checkbox" aria-label="Checkbox for following text input">
+                                                                    <input type="checkbox" aria-label="Checkbox for following text input" class="veggie">Pineapple
                                                                   </div>
                                                                 </div>
-                                                                <p class="toppings">Pineapple</p>
+                                                              
                                                               </div>
                                                               <div class="input-group mb-3 top-list-1">
                                                                     <div class="input-group-prepend">
                                                                       <div class="input-group-text top-check-1">
-                                                                        <input type="checkbox" aria-label="Checkbox for following text input">
+                                                                        <input type="checkbox" aria-label="Checkbox for following text input" class="veggie">Spinach
                                                                       </div>
                                                                     </div>
-                                                                    <p class="toppings">Spinach</p>
+                                                                   
                                                                   </div>
                                                                   <div class="input-group mb-3 top-list-1">
                                                                         <div class="input-group-prepend">
                                                                           <div class="input-group-text top-check-1">
-                                                                            <input type="checkbox" aria-label="Checkbox for following text input">
+                                                                            <input type="checkbox" aria-label="Checkbox for following text input" class="veggie">Jalepeno
                                                                           </div>
                                                                         </div>
-                                                                        <p class="toppings">Jalepeno</p>
+                                                                      
                                                                       </div>
         <!--/Veggie selection-->
 
         <!--Place order-->
         <!--click the button to bring up the window with your receipt then click a confirm button on the bottom of that page which brings up a seocnd window that confirms your order-->
-        <div>
+      <!--  <div>
             <button type="button" class="btn btn-danger btn-lg " data-toggle="modal" data-target="#orderModal" id="order-butn">Place Order</button>
         </div>
-        <!--/Place order-->
+        /Place order-->
 
         <!--order modal-->
-        <div class="modal fade" id="orderModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <!--<div class="modal fade" id="orderModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true" onload="receipt()">
                 <div class="modal-dialog modal-dialog-centered" role="document">
                   <div class="modal-content">
                     <div class="modal-header">
-                      <h5 class="modal-title" id="exampleModalCenterTitle">Order Summary</h5>
+                      <h3 class="modal-title" id="exampleModalCenterTitle">Order Summary</h3>
                       <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                       </button>
                     </div>
                     <div class="modal-body">
-                      <p id="repJava"></p>
+                            <div id="title1"><h5>You Ordered:</h5></div>
+                            <div id="title2"><h5>Subtotal:</h5></div>
+                            <div id="showText1"></div>
+                            <div id="showText2"></div>
+                            <div id="totalPrice1"><h5>Total Price:</h5></div>
+                            <div id="totalPrice2"></div>
                     </div>
                     <div class="modal-footer">
                       <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
@@ -274,47 +279,39 @@
                   </div>
                 </div>
               </div>
-        <!--/order modal-->
+        /order modal--> 
+        <!--Order button backup-->
+        <!--<button type="button" class="btn btn-danger Builder-head" onclick="receipt()">Order</button>-->
+        <!--/Order button backup-->
+       <!--Receipt backup-->
+      <!-- <div id="receipt2">
+           <h3 id="rechead">Order Summary</h3>
+           <P class="recpar" id="textTotal1"></P>
+           <p class="recpar" id="textTotal2"></p>
+           <p class="recfoot"><strong>Total:</strong></p>
+           <p class="recfoot" id="totalPrice2"></p> 
+
+       </div> -->
+       <!--/Receipt backup-->
+
+       <div class="controls">
+            <button class="button btn-danger" onclick="receipt()">Order</button>
+            <div class="button" onclick="clearAll()">
+                <p>Cancel</p>
+            </div>
+        </div>
+        <div id="cart">
+            <div id="title1"><h3>You Ordered:</h3></div>
+            <div id="title2"><h3>Subtotal:</h3></div>
+            <div id="textTotal1"></div>
+            <div id="textTotal2"></div>
+            <div id="totalPrice1"><h3>Total Price:</h3></div>
+            <div id="totalPrice2"></div>
+        </div>
 
     
     <!-- Optional JavaScript -->
-    <script>
-        document.getElementById("repJava").innerHTML=buildReceipt();
-
-        function buildReceipt() {
-            var text1 = "<h3>You Ordered</h3>"
-            var runningTotal = 0;
-            var sizeTotal = 0;
-            var sizeArray = document.getElementsByClassName("size")
-        }
-
-        for(var i=0; i<sizeArray.length;i++) {
-            if(sizeArray[i].checked) {
-                var selectedSize = sizeArray[i].value;
-                text1 = text1+selectedSize+"<br>";
-            }
-        }
-
-        if(selectedSize === "Personal") {
-            sizeTotal = 6;
-        }
-        else if(selectedSize === "Medium") {
-            sizeTotal = 10;
-        }
-        else if(selectedSize === "Large") {
-            sizeTotal = 14;
-        }
-        else if(selectedSize === "Extra Large") {
-            sizeTotal = 16;
-        }
-
-        runningTotal = sizeTotal;
-        console.log(selectedSize+" = $"+sizeTotal+".00");
-        console.log("size text1: "+text1);
-        console.log("subtotal: $"+runningTotal+".00");
-        getMeat(runningTotal,text1);
-        
-    </script>
+    <script src="./JS/pizza.js"></script>
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
