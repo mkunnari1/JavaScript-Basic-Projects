@@ -1,40 +1,41 @@
 function receipt() {
     text1 = "";
     text2 = "";
-    var size = document.getElementsByClassName("Size").innerHTML;
+    var sizeArray = document.getElementsByClassName("Size");
     var runningTotal = 0;
     var sizeTotal = 0;
-        for (var i=0; i < size.length; i++ ) {
-            if(size[i].checked) {
-                var selectedSize = size[i].value;
+        for (var i=0; i < sizeArray.length; i++ ) {
+            if(sizeArray[i].checked) {
+                var selectedSize = sizeArray[i].value;
                 text1 = text1+selectedSize+"<br>";
             }
         }
-        if(selectedSize ="Personal $6.00") {
+        if(selectedSize ==="Personal $6.00") {
             sizeTotal = 6;
-            text2=text2+selectedSize+"<br>";
+            text2=text2+sizeTotal+"<br>";
         }
-        else if(selectedSize = "Medium $10.00") {
+        else if(selectedSize === "Medium $10.00") {
             sizeTotal = 10;
-            text2=text2+selectedSize+"<br>";
+            text2=text2+sizeTotal+"<br>";
         }
-        else if(selectedSize = "Large $14.00") {
+        else if(selectedSize === "Large $14.00") {
             sizeTotal = 14;
-            text2=text2+selectedSize+"<br>";
+            text2=text2+sizeTotal+"<br>";
         }
-        else if(selectedSize = "Extra Large $16.00") {
+        else if(selectedSize === "Extra Large $16.00") {
             sizeTotal = 16;
-            text2=text2+selectedSize+"<br>";
+            text2=text2+sizeTotal+"<br>";
         }
 
         runningTotal = sizeTotal;
-       getCrust(runningTotal,text1,tex2);
+       getCrust(runningTotal,text1,text2);
     };
 
-    function getCrust(runningTotal,text1,tex2) {
+    function getCrust(runningTotal,text1,text2) {
         var crustTotal = 0;
+        var runningTotal=runningTotal;
         var selectedCrust;
-        var crust = document.getElementsByClassName("crust").innerHTML;
+        var crust = document.getElementsByClassName("crust");
         for (var cr=0;cr<crust.length;cr++) {
             if(crust[cr].checked) {
                 selectedCrust=crust[cr].value;
@@ -44,16 +45,17 @@ function receipt() {
                 crustTotal = 3;
             }
         }
-        runningTotal=(text2+crustTotal);
+        runningTotal=(runningTotal+crustTotal);
         text2=text2+crustTotal+"<br>";
-        text1=text1+selectedCrust;
+       
         getCheese(runningTotal,text1,text2);
     };
 
     function getCheese(runningTotal,text1,text2) {
         var cheeseTotal = 0;
         var selectedCheese;
-        var cheese = document.getElementsByClassName("cheese").innerHTML;
+        var runningTotal = runningTotal;
+        var cheese = document.getElementsByClassName("cheese");
         for (var che=0;che<cheese.length;che++) {
             if(cheese[che].checked) {
                 selectedCheese=cheese[che].value;
@@ -71,6 +73,7 @@ function receipt() {
     function getSauce(runningTotal,text1,text2) {
         var sauce = document.getElementsByClassName("sauce");
         var selectedSauce;
+        var runningTotal = runningTotal;
         for(var s = 0;s<sauce.length;s++) {
             if(sauce[s].checked){
                 selectedSauce=sauce[s].value;
@@ -152,14 +155,11 @@ function receipt() {
        
         }
         
-        document.getElementById("receipt2").style.opacity=1;
+        
         document.getElementById("textTotal1").innerHTML=text1;
         document.getElementById("textTotal2").innerHTML=text2;
-        document.getElementById("totalPrice2").innerHTML = "</h3>$"+runningTotal+".00"+"</h3>";
+        document.getElementById("totalPrice2").innerHTML = "<h5>$"+runningTotal+".00"+"</h5>";
 
         
     };
-    function clearAll() {
-        document.getElementById("frmMenu").reset();
-        document.getElementById("cart").style.opacity=0;
-};
+    
